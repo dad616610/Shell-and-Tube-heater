@@ -1,0 +1,77 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2306                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+8
+(
+    baffles
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          47187;
+        startFace       18791459;
+    }
+    baffles_slave
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          47187;
+        startFace       18838646;
+    }
+    cold_inlet
+    {
+        type            patch;
+        nFaces          606;
+        startFace       18885833;
+    }
+    cold_outlet
+    {
+        type            patch;
+        nFaces          650;
+        startFace       18886439;
+    }
+    exchanger
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          350786;
+        startFace       18887089;
+    }
+    inlet_baffle
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          10669;
+        startFace       19237875;
+    }
+    outlet_baffle
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          9933;
+        startFace       19248544;
+    }
+    pipes
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          694439;
+        startFace       19258477;
+    }
+)
+
+// ************************************************************************* //

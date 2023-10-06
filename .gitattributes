@@ -1,0 +1,6 @@
+constant/hot/polyMesh/points filter=lfs diff=lfs merge=lfs -text
+constant/hot/polyMesh/faces filter=lfs diff=lfs merge=lfs -text
+constant/cold/polyMesh/faces filter=lfs diff=lfs merge=lfs -text
+constant/cold/polyMesh/points filter=lfs diff=lfs merge=lfs -text
+constant/polyMesh/faces filter=lfs diff=lfs merge=lfs -text
+constant/polyMesh/points filter=lfs diff=lfs merge=lfs -text
